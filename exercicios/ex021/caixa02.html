@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px;
+            box-shadow:2px 2px 3px rgba(0, 0, 0, 0.308);
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.39);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px;
+            box-shadow:2px 2px 3px rgba(0, 0, 0, 0.308);
+
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        aside {
+            background-color: lightgray;
+        }
+        
+        p {
+            text-indent: 32px;
+        }
+        aside#interno {
+            display: inline;
+            width: 30%;
+            height: 200px;
+        }
+
+        p#curto {
+            display: inline;
+            width: 60%;
+            height: 200px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>link link link link</nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deleniti provident. Ullam odit sunt cumque consequatur temporibus aliquam consectetur beatae voluptatibus ad, a nesciunt laborum pariatur dolores doloribus corrupti ipsam.</p>
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p id="curto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima ad deserunt, voluptates repudiandae quaerat sapiente totam quam eaque vero nam cum adipisci dolore doloribus itaque vel quas atque facilis.</p>
+                <aside id="interno">Conteúdo periférico do artigo</aside>
+            </article>
+        </section>
+        <aside id="externo">
+            Conteúdo periférico do site
+        </aside>
+    </main>
+    <footer>
+        conteúdo do rodapé
+    </footer>
+</body>
+</html>
